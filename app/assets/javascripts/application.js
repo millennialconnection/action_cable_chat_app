@@ -1,3 +1,7 @@
+message_appender = function(content) {
+  $('#messages-table').append(content);
+}
+
 $(document).on('turbolinks:load', function() {
-  $('#messages-table').append('hello, world!');
+  message_appender('hello, world!');
 });
