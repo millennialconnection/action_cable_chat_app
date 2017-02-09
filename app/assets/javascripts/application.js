@@ -1,7 +1,5 @@
-message_appender = function(content) {
-  $('#messages-table').append(content);
-}
+greeting_doubler = function(phrase) {
+  alert(phrase + " " + phrase);
+};
 
-$(document).on('turbolinks:load', function() {
-  message_appender('hello, world!');
-});
+greeting_doubler('hello, world!');
