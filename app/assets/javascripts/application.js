@@ -1,5 +1,3 @@
-greeting_doubler = function(phrase) {
-  alert(phrase + " " + phrase);
-};
-
-greeting_doubler('hello, world!');
+$(document).on('turbolinks:load', function() {
+  $('#messages-table').append('hello, world!');
+});
